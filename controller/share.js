@@ -1,5 +1,5 @@
 /**
- * DemoPage
+ * ShareSpace
  *
  * @package Controller
  * @author T.Shoji <t.shoji@nodecom.jp>
@@ -10,7 +10,7 @@ var router = require('express').Router({caseSensitive: true});
 
 /* rendering page. */
 router.get('/', function (req, res, next) {
-  res.render('demo/index', {});
+  res.render('share/index', {});
 });
 
 module.exports = router;

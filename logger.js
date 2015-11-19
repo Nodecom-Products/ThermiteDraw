@@ -1,8 +1,8 @@
 /**
  * Logger(Log4js)
  *
- * @author T.Shoji
- * @copyright 2012-2015 Nodecom Group All Rights Reserved.
+ * @author T.Shoji <t.shoji@nodecom.jp>
+ * @copyright 2012-2016 Nodecom Group All Rights Reserved.
  */
 
 var log4js = require('log4js');
@@ -17,5 +17,4 @@ switch (process.env.NODE_ENV) {
     logger = log4js.getLogger('production');
   break;
 }
-
 module.exports = logger;

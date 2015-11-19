@@ -1,11 +1,11 @@
-# Thermite Draw
+# ThermiteDraw
 
 The tool for support to collaboration.
 
-## Status info
+[![Dependency Status](https://david-dm.org/Nodecom-Products/ThermiteDraw.png)](https://david-dm.org/Nodecom-Products/ThermiteDraw)
+[![devDependency Status](https://david-dm.org/Nodecom-Products/ThermiteDraw/dev-status.png)](https://david-dm.org/Nodecom-Products/ThermiteDraw#info=devDependencies)
 
-[![Dependency Status](https://david-dm.org/Nodecom-Products/ThermiteDraw_prototype.png)](https://david-dm.org/Nodecom-Products/ThermiteDraw_prototype)
-[![devDependency Status](https://david-dm.org/Nodecom-Products/ThermiteDraw_prototype/dev-status.png)](https://david-dm.org/Nodecom-Products/ThermiteDraw_prototype#info=devDependencies)
+[![Gitter ChatRoom](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Nodecom-Products/ThermiteDrawDiscussionRoom)
 
 ## Overview
 
@@ -13,7 +13,7 @@ The tool for support to collaboration.
 
 * Screen sharing.
 * Can drawing on the screen to things you like.
-* Design like a chalkboard.
+* The design like a chalkboard.
 
 ### Docs & Community
 
@@ -28,6 +28,7 @@ Eiji Terada <[Node Communication, Ltd.](http://www.nodecom.jp)>
 ### Development supervisor
 
 Tadahiro Shoji <[Nodecom Terminal, Ltd.](http://www.nodecom.jp/node_terminal)>
+<a href="https://line.me/ti/p/%40dzw2624p"><img height="25" border="0" alt="Add friends button" src="http://biz.line.naver.jp/line_business/img/btn/addfriends_en.png"></a>
 
 ### Project Manager
 

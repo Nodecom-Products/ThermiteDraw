@@ -1,5 +1,5 @@
 /**
- * DemoPage Content
+ * ShareRoom Content
  *
  * @package View
  * @author T.Shoji <t.shoji@nodecom.jp>
@@ -9,18 +9,20 @@
 var React   = require('react');
 var ReactBS = require('react-bootstrap');
 
-var HtmlHead = require('./partials/html_head');
+var HtmlHead = require('../common/partials/htmlHead_useSocketIO');
 
 var Content = React.createClass({
   getDefaultProps: function () {
     return {
-      title: 'ThermiteDraw - ShareSpace'
+      title: 'ThermiteDraw - ShareSpace',
+      cssFile: '/css/shareSpace.css',
+      jsFile: '/js/draw.js'
     };
   },
   render: function() {
     return (
       <html lang="ja">
-      <HtmlHead title={this.props.title}></HtmlHead>
+      <HtmlHead title={this.props.title} cssFilePath={this.props.cssFile} jsFilePath={this.props.jsFile}></HtmlHead>
       <body>
         {/* header */}
         <ReactBS.ButtonGroup id="headerMenu" justified>

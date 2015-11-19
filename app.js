@@ -1,15 +1,10 @@
-/**
- * @author T.Shoji
- * @copyright 2012-2015 Nodecom Group All Rights Reserved.
- */
-
 var express      = require('express');
 var path         = require('path');
 var favicon      = require('serve-favicon');
 var cookieParser = require('cookie-parser');
 var bodyParser   = require('body-parser');
-var routes       = require('./routes');
-var app          = express();
+
+var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -23,7 +18,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // routing
-require('./routes/route_bind')(app, routes);
+require('./routes')(app);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

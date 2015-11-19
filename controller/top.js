@@ -1,5 +1,5 @@
 /**
- * DemoPage
+ * TopPage
  *
  * @package Controller
  * @author T.Shoji <t.shoji@nodecom.jp>
@@ -9,8 +9,16 @@
 var router = require('express').Router({caseSensitive: true});
 
 /* rendering page. */
+router.get('/createroom', function (req, res, next) {
+  res.render('top/createRoom', {});
+});
+
+router.get('/roomlist', function (req, res, next) {
+  res.render('top/roomList', {});
+});
+
 router.get('/', function (req, res, next) {
-  res.render('demo/index', {});
+  res.render('top/index', {});
 });
 
 module.exports = router;

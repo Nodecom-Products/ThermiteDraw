@@ -1,7 +1,19 @@
 #!/usr/bin/env node
 
 /* Module dependencies */
-var app = require('../app');
+var app  = require('../app');
+
+var util = require('util');
+var fs   = require('fs');
+
+var logger = require('../logger');
+
+var jsonData = JSON.parse(fs.readFileSync('public/conf/env.json'));
+logger.debug('Project ENV -> ' + util.inspect(jsonData, {showHidden: true, depth: null}));
+var pjConf = require('../projectSettings')(jsonData.env);
+pjConf.ENV = jsonData.env;
+logger.debug('Project Settings -> ' + util.inspect(pjConf, {showHidden: true, depth: null}));
+logger.debug('環境変数 - BASE_URL -> ' + util.inspect(process.env.BASE_URL, {showHidden: true, depth: null}));
 
 /* Socket.IO */
-require('../SocketIO')(app);
+require('../SocketIO')(app, pjConf);
